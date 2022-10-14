@@ -1,0 +1,223 @@
+:root {
+    --popup-width: 320px;
+    --popup-height: 400px;
+    --popup-button-height: 44px;
+    --popup-action-height: 52px;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+ul {
+    display: flex;
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+section.categories ul.list {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section.popular ul.list {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section.search form {
+	display: flex;
+    overflow: hidden;
+}
+
+section.search form #input_category {
+	width: 180px;
+}
+
+section.search form #input_category option {
+    padding: 12px;
+}
+
+section.search form #input_query {
+	flex: 1;
+}
+
+section.article {
+    display: flex;
+}
+
+section.article article {
+    width: 30%;
+}
+
+section.article .desc {
+    width: 70%;
+}
+
+.bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 1em;
+}
+
+.popup {
+    position: relative;
+    float: right;
+    margin-left: 1em;
+    width: var(--popup-width);
+}
+
+.popup * {
+    box-sizing: border-box;
+}
+
+.popup .title {
+    text-transform: uppercase;
+    background-color: var(--material-color-green-100);
+    padding: 12px 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.popup .title:hover, .popup.open .title {
+    background-color: var(--material-color-green-200);
+}
+
+.popup .window {
+    height: var(--popup-height);
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    bottom: var(--popup-action-height);
+    padding: 1em;
+    background-color: white;
+    z-index: -1;
+    transform: translateY(-44px);
+    border-radius: 4px 4px 0 0;
+    box-shadow: var(--box-shadow);
+}
+
+.popup .action {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: var(--popup-button-height);
+}
+
+.popup.open .action {
+    display: block;
+    visibility: visible;
+}
+
+.popup.open .window {
+    display: block;
+    visibility: visible;
+}
+
+.popup.open > .title {
+    border-radius: 0 0 4px 4px;
+}
+
+#chat .message .name {
+    display: inline-block;
+}
+
+#chat .message {
+    margin-bottom: 1em;
+}
+
+#chat .message .user {
+    display: flex;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+#chat .message .text {
+    width: 80%;
+    padding: 8px;
+}
+
+#chat .user .avatar {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin-right: 8px;
+}
+
+#chat .user .picture {
+    border-radius: 50%;
+}
+
+#chat .user .status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#chat .message .text {
+    background-color: var(--material-color-grey-200);
+    border-radius: 4px;
+}
+
+#chat .message small {
+    margin-left: 8px;
+    opacity: 75%;
+}
+
+#chat .message a {
+    text-decoration: underline;
+}
+
+#chat .message:nth-child(even) .text {
+    margin-left: auto;
+}
+
+#chat input {
+    padding: 1em;
+    width: 100%;
+    height: var(--popup-action-height);
+    background-color: var(--material-color-grey-200);
+}
+
+#cart article {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--material-color-grey-300);
+}
+
+#cart article .name {
+    padding: 2px 0;
+}
+
+#cart article .price {
+    padding: 4px 0;
+}
+
+#cart .summary {
+    display: flex;
+    height: var(--popup-action-height);
+    padding: 1em;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+#cart .action {
+    background-color: var(--material-color-grey-200);
+}
+
+footer ul > * {
+    flex: 1;
+}

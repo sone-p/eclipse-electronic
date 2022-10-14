@@ -1,0 +1,32 @@
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav .menu-icon {
+ display: none;
+}
+
+nav .menu-icon img {
+    height: 24px;
+    width: 24px;
+}
+
+section.popular ul.list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#chat, #cart {
+    display: none;
+}
+
+.search form {
+    display: flex;
+}
+
+.search form #input_query {
+    flex: 1;
+}

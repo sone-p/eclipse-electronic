@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+    <link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width: 600px) and (max-width: 900px)">
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 900px)">
+    <script src="js/main.js"></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/popup.js" defer></script>
+    <script src="js/category.js" defer></script>
+    <title>Eclipse Electronic</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title"><a href="index.html">Eclipse Electronic</a></h1>
+            <nav>
+                <div class="menu-icon"><img src="icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li class="dropdown left">
+                        <a href="#">Komponente</a>
+                        <ul class="content">
+                            <li><a href="category.html?name=tranzistori">Tranzistori</a></li>
+                            <li><a href="category.html?name=otpornici">Otpornici</a></li>
+                            <li><a href="category.html?name=kondenzatori">Kondenzatori</a></li>
+                            <li><a href="category.html?name=diode">Diode</a></li>
+                            <li><a href="category.html?name=transformatori">Transformatori</a></li>
+                            <li><a href="category.html?name=osigurači">Osigurači</a></li>
+                            <li><a href="category.html?name=integralna kola">Integralna kola</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown left">
+                        <a href="#">Delovi</a>
+                        <ul class="content">
+                            <li><a href="category.html?name=tcon">TCON Ploče</a></li>
+                            <li><a href="category.html?name=daljinski">Daljinski upravljači</a></li>
+                            <li><a href="category.html?name=trake">LED Trake</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">O nama</a></li>
+                    <li class="margin-left-auto dropdown center">
+                        <a href="#">Prijava</a>
+                        <div class="content">
+                            <form action="login">
+                                <p>Korisničko ime</p>
+                                <input type="text" name="username" id="">
+                                <p>Lozinka</p>
+                                <input type="password" name="password" id="">
+                                <input type="submit" value="Prijava">
+                            </form>
+                        </div>
+                    </li>
+                    <li><a href="#">Registracija</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <marquee behavior="scroll" loop="infinite" direction="left">
+                <span class="info">Obaveštenje</span>Eclipse Electronic neće raditi tokom prvomajskih praznika.
+            </marquee>
+            <section class="popular">
+                <h2 class="title"></h2>
+                <ul class="list">
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <div class="bottom">
+        <div class="container">           
+            <div id="cart" class="popup">
+                <h4 class="title">Korpa <span class="count"></span></h4>
+                <div class="window">
+                    <!-- <article>
+                        <h4 class="name">Lorem, ipsum dolor.</h4>
+                        <p class="code">Lorem, ipsum.</p>
+                        <h4 class="price">\d.00 RSD</h4>
+                    </article>                    -->
+                </div>
+                <div class="action summary">
+                    <h4>Ukupno</h4>
+                    <h4 class="price">200 RSD</h4>
+                </div>
+            </div>
+            <div id="chat" class="popup">
+                <h4 class="title">Postavi pitanje</h4>
+                <div class="window">
+                    <div class="message">
+                        <div class="user admin">
+                            <div class="avatar">
+                                <img src="https://via.placeholder.com/32" alt="" class="picture">
+                                <div class="status online"></div>
+                            </div>
+                            <h4 class="name">Marko</h4>
+                        </div>
+                        <div>
+                            <p class="text">Zdravo, kako vam možemo pomoći?</p>
+                            <small>pre 2 minuta</small>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div>
+                            <p class="text">Zdravo, zanima me da li prodajete daljinske upravljače?</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="user admin">
+                            <div class="avatar">
+                                <img src="https://via.placeholder.com/32" alt="" class="picture">
+                                <div class="status online"></div>
+                            </div>
+                            <h4 class="name">Marko</h4>
+                        </div>
+                        <div>
+                            <p class="text">Da, prodajemo, kliknite ovde <a href="#">Daljinski upravljači</a></p>               
+                            <small>upravo sada</small>    
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div>
+                            <p class="text">Hvala!</p>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" spellcheck="false" class="input action" placeholder="Postavite pitanje">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
